@@ -6,4 +6,6 @@
 export {default as Navbar} from './navbar'
 export {default as UserHome} from './user-home'
 export {default as Moods} from './moods'
+export {default as Unproductive} from './unproductive'
+export {default as Bored} from './bored'
 export {Login, Signup} from './auth-form'

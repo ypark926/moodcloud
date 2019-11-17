@@ -1,34 +1,24 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 
-/**
- * COMPONENT
- */
-export const Moods = props => {
-  const {email} = props
-
-  return (
+const Moods = () => (
+  <div id="moods-container">
+    <h1>it's up to you where you go from here...</h1>
     <div>
-      <h3>Welcome, {email}</h3>
+      <Link to="/urbein2unproductiv">
+        <img
+          id="moodOptions"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsclYaOoF4ixKUNjjy5N6r_vA9SlRUODwWYns8cHm8ekdTIICc"
+        />
+      </Link>
+      <Link to="/urboredbutsame">
+        <img
+          id="moodOptions"
+          src="https://static01.nyt.com/images/2019/02/03/opinion/sunday/03paul/03paul-articleLarge.jpg?quality=75"
+        />
+      </Link>
     </div>
-  )
-}
+  </div>
+)
 
-/**
- * CONTAINER
- */
-const mapState = state => {
-  return {
-    email: state.user.email
-  }
-}
-
-export default connect(mapState)(Moods)
-
-/**
- * PROP TYPES
- */
-Moods.propTypes = {
-  email: PropTypes.string
-}
+export default Moods
