@@ -12,10 +12,6 @@ const VideoPlayer = props => {
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
           />
         </div>
-        <div className="additional">
-          <div>{vid.snippet.title}</div>
-          <div>{vid.snippet.description}</div>
-        </div>
       </div>
     )
   }
