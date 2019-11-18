@@ -4,7 +4,7 @@ const VideoPlayer = props => {
   const vid = props.vid
 
   if (!vid) {
-    return <div>lol try again</div>
+    return <div>keep it coming y'all</div>
   }
 
   const vidId = vid.id.videoId
