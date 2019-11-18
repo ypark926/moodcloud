@@ -17,6 +17,12 @@ const Moods = () => (
           src="https://static01.nyt.com/images/2019/02/03/opinion/sunday/03paul/03paul-articleLarge.jpg?quality=75"
         />
       </Link>
+      <Link to="/areyouhangrycuzsame">
+        <img
+          id="moodOptions"
+          src="https://hips.hearstapps.com/cosmouk.cdnds.net/16/14/1459871034-hangry1.jpg"
+        />
+      </Link>
     </div>
   </div>
 )

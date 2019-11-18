@@ -27,15 +27,17 @@ class AddTodo extends Component {
   render() {
     return (
       <div className="add-todo">
-        <input
-          type="text"
-          value={this.state.item}
-          onChange={evt => this.setState({item: evt.target.value})}
-          onKeyDown={this.handleKey}
-        />
-        <button type="submit" onClick={this.handleClick}>
-          add your todo...or not.
-        </button>
+        <div className="searching">
+          <input
+            type="text"
+            value={this.state.item}
+            onChange={evt => this.setState({item: evt.target.value})}
+            onKeyDown={this.handleKey}
+          />
+          <button type="submit" onClick={this.handleClick}>
+            add your todo...or not.
+          </button>
+        </div>
       </div>
     )
   }
