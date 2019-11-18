@@ -4,7 +4,16 @@ const VideoPlayer = props => {
   const vid = props.vid
 
   if (!vid) {
-    return <div>keep it coming y'all</div>
+    return (
+      <div className="video-detail col-md-8">
+        <div className="iframe-container">
+          <iframe
+            className="embed-responsive-item"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          />
+        </div>
+      </div>
+    )
   }
 
   const vidId = vid.id.videoId
